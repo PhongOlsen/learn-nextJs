@@ -9,18 +9,21 @@
     "lint": "next lint",
     "test": "jest",
     "prepare": "husky install",
-    "pre-commit": "yarn lint && yarn test && yarn check-branch-name",
-    "check-branch-name": "chmod 755 ./hook/check_branch_naming.sh && sh ./hook/check_branch_naming.sh"
+    "pre-commit": "yarn lint && yarn check-branch-name",
+    "check-branch-name": "chmod 755 ./.husky/check_branch_naming.sh && sh ./.husky/check_branch_naming.sh"
   },
   "dependencies": {
     "@auth0/auth0-react": "^2.0.2",
+    "@hookform/resolvers": "^3.3.1",
     "clsx": "^1.2.1",
     "jira-prepare-commit-msg": "^1.7.2",
     "lodash": "^4.17.21",
     "next": "12.1.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "react-gtm-module": "^2.0.11"
+    "react-gtm-module": "^2.0.11",
+    "react-hook-form": "^7.46.1",
+    "yub": "^0.11.1"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^6.1.3",
