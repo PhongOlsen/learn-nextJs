@@ -1,14 +1,14 @@
 import {ChildrenType} from "../utils/others";
 import React from "react";
 import {Auth0Provider} from "@auth0/auth0-react";
-import {useRouter} from "next/router";
+// import {useRouter} from "next/router";
 
 type AuthProviderProps = {
     children: ChildrenType;
 };
 
 const AuthProvider: React.FunctionComponent<AuthProviderProps> = ({children}) => {
-    const router = useRouter();
+    // const router = useRouter();
 
     return (
         <Auth0Provider

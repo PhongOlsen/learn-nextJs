@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     environment {
-        BRANCH_BUILD = 'main'
-        REPO_GIT_HUB_URL = 'https://github.com/PhongOlsen/learn-nextJs.git'
+        BRANCH_BUILD = `${env.BRANCH_BUILD}`
+        REPO_GIT_HUB_URL = `${env.REPO_GIT_HUB_URL}`
     }
 
     stages {
