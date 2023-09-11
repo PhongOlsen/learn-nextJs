@@ -4,7 +4,6 @@ import AuthProvider from "../src/components/AuthProvider";
 
 function MyApp({ Component, pageProps }: AppProps) {
 
-
   return (
       <>
         <AuthProvider>
