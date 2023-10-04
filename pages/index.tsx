@@ -4,13 +4,12 @@ import {useState} from "react";
 import _clsx from "clsx";
 import { withAuthenticationRequired } from '@auth0/auth0-react';
 
-const Home: NextPage = ({ content }: any) => {
+const Home: NextPage = () => {
     const [numberChair, setNumberChair] = useState<number>(10);
     const [numberChairSelected, setNumberChairSelected] = useState<number | null>(null);
     const [isFinding, setIsFinding] = useState<boolean>(false);
     const [numberRandomInProcessing, setNumberRandomInProcessing] = useState<number>(1);
     const [timeoutRunProcessing, setTimeoutRunProcessing] = useState<number>(10);
-    console.log(content)
 
     const handleFindChairRandom = () => {
         setIsFinding(true);

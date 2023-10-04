@@ -10,13 +10,15 @@ const nextConfig = {
     NEXT_PUBLIC_GTM_ID: process.env.NEXT_PUBLIC_GTM_ID,
     REPO_GIT_HUB_URL: process.env.REPO_GIT_HUB_URL,
     BRANCH_BUILD: process.env.BRANCH_BUILD,
+    STRIPE_PUBLISHABLE_KEY: process.env.STRIPE_PUBLISHABLE_KEY,
+    STRIPE_SECRET_KEY: process.env.STRIPE_SECRET_KEY
   },
   experimental: {
     serverActions: true
   },
   sassOptions: {
-    includePaths: [path.join(__dirname, 'styles')],
-  },
+    includePaths: [path.join(__dirname, 'styles')]
+  }
 }
 
 module.exports = nextConfig
