@@ -10,7 +10,6 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "jest",
     "prepare": "husky install",
     "pre-commit": "yarn lint && yarn check-branch-name",
     "check-branch-name": "chmod 755 ./.husky/check_branch_naming.sh && sh ./.husky/check_branch_naming.sh"
@@ -19,6 +18,7 @@
     "@auth0/auth0-react": "^2.0.2",
     "@hookform/resolvers": "^3.3.1",
     "@vercel/node": "^3.0.4",
+    "axios": "^1.5.1",
     "clsx": "^1.2.1",
     "jira-prepare-commit-msg": "^1.7.2",
     "lodash": "^4.17.21",
@@ -27,6 +27,7 @@
     "react-dom": "17.0.2",
     "react-gtm-module": "^2.0.11",
     "react-hook-form": "^7.46.1",
+    "react-query": "^3.39.3",
     "yub": "^0.11.1"
   },
   "devDependencies": {
